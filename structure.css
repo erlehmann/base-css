@@ -42,6 +42,7 @@ html {
 body {
     margin: auto;
     max-width: 960px;
+    padding: 0 16.5em;
     width: 40em;  /* <http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.2/> */
 }
 
