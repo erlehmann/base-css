@@ -2,7 +2,6 @@
 
 * {
     border: none;
-    color: inherit;
     font: inherit;
     font-size: 100%;
     line-height: 1.5;
@@ -17,7 +16,7 @@
 [id] {}
 
 [title] {
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted;
     border-bottom-style: dotted !important;
     cursor: help;
 }
@@ -41,16 +40,6 @@ html {
 /* Sections */
 
 body {
-    background-color: #eeeeec;  /* */
-    background-image: url('noise.png');
-    background-image: -webkit-gradient(
-        radial,
-        center center, 0,
-        center center, 600,
-        from(rgba(238, 238, 236, 0.6)),
-        to(rgba(114, 159, 207, 0))
-    );
-    color: #2e3436;  /* */
     margin: auto;
     max-width: 960px;
     width: 40em;  /* <http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.2/> */
@@ -60,8 +49,6 @@ section,
 nav,
 article,
 aside {
-    background-color: #ffffff;  /* */
-    color: #2e3436;  /* */
     display: block;
     margin: 1.5em auto;
 }
@@ -69,11 +56,7 @@ aside {
 nav,
 aside,
 article {
-    border: 1px solid #888a85;  /* */
-    -webkit-box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
-    -moz-box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
-    -o-box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
-    box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
+    border: 1px solid;
     padding: 1.5em;
 }
 
@@ -106,8 +89,6 @@ aside {
 }
 
 aside::before {
-    background-color: #d3d7cf;
-    border-color: #888a85;
     border-style: solid dotted;
     border-width: 1px 2px;
     content: "";
@@ -253,30 +234,19 @@ h1 > a {
 }
 
 a:link {
-    background-color: #ffffff;
-    border-color: #204a87;  /* */
-    color: #204a87;  /* */
 }
 
 a:visited {
-    background-color: #ffffff;
-    border-color: #5c3566;  /* */
-    color: #5c3566;  /* */
 }
 
 a:hover {
-    background-color: #ffffff;
-    /*border-color: #ce5c00;*/
-    color: #2e3436;
 }
 
 h1 > a:hover {
-    background-color: #ffffff;
-    color: #2e3436;  /* */
 }
 
 a:focus {
-    outline: 1px solid #f57900;  /* */
+    outline: 1px solid;
 }
 
 nav a,
@@ -318,10 +288,13 @@ kbd {
     white-space: pre;
 }
 
+code,
+samp,
+kbd {
+    border: 1px solid;    
+}
+
 code {
-    background-color: #eeeeec;  /* */
-    border: 1px solid #888a85;  /* */
-    color: #000000;  /* */
 }
 
 var {
@@ -329,15 +302,9 @@ var {
 }
 
 samp {
-    background-color: #2e3436;  /* */
-    border: 1px solid #000000;
-    color: #eeeeec;  /* */
 }
 
 kbd {
-    background-color: #2e3436;  /* */
-    border: 1px solid #000000;
-    color: #8ae234;  /* */
 }
 
 article > code,
@@ -419,11 +386,7 @@ del {}
 img,
 video,
 audio {
-    border: 1em solid #ffffff;  /* */
-    -webkit-box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
-    -moz-box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
-    -o-box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
-    box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
+    border: 1em solid;
     position: relative;
     left: -1em;
     max-width: 37em;  /* 40em - 2 * 1.5em padding of the article */
@@ -461,10 +424,8 @@ area {}
 /* Tabular data */
 
 table {
-    background-color: #eeeeec;  /* */
-    border: 1px solid #888a85;  /* */
+    border: 1px solid;
     border-collapse: collapse;
-    color: #000000;  /* */
     display: table !important;
 }
 
@@ -478,17 +439,6 @@ thead {}
 tfoot {}
 
 tr {}
-
-thead > tr:nth-of-type(odd),
-tr:nth-of-type(even) {
-    background-color: #eeeeec;
-    color: #2e3436;
-}
-
-tr:nth-of-type(odd) {
-    background-color: #ffffff;
-    color: #2e3436;
-}
 
 td,
 th {
