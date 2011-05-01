@@ -1,15 +1,15 @@
 /* Poor man's reset */
 
 * {
-	border: none;
-	color: inherit;
-	font: inherit;
-	font-size: 100%;
-	line-height: 1.5;
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	vertical-align: baseline;
+    border: none;
+    color: inherit;
+    font: inherit;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    vertical-align: baseline;
 }
 
 /* Global attributes */
@@ -17,13 +17,13 @@
 [id] {}
 
 [title] {
-	border-bottom: 1px dotted black;
-	border-bottom-style: dotted !important;
-	cursor: help;
+    border-bottom: 1px dotted black;
+    border-bottom-style: dotted !important;
+    cursor: help;
 }
 
 h1 [title] {
-	border-bottom-width: 2px;
+    border-bottom-width: 2px;
 }
 
 [lang] {}
@@ -34,15 +34,15 @@ h1 [title] {
 /* root element */
 
 html {
-	font-family: "Droid Sans", sans-serif;
-	padding: 2em;
+    font-family: "Droid Sans", sans-serif;
+    padding: 2em;
 }
 
 /* Sections */
 
 body {
-	background-color: #eeeeec;  /* */
-	background-image: url('noise.png');
+    background-color: #eeeeec;  /* */
+    background-image: url('noise.png');
     background-image: -webkit-gradient(
         radial,
         center center, 0,
@@ -50,124 +50,124 @@ body {
         from(rgba(238, 238, 236, 0.6)),
         to(rgba(114, 159, 207, 0))
     );
-	color: #2e3436;  /* */
-	margin: auto;
-	max-width: 960px;
-	width: 40em;  /* <http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.2/> */
+    color: #2e3436;  /* */
+    margin: auto;
+    max-width: 960px;
+    width: 40em;  /* <http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.2/> */
 }
 
 section,
 nav,
 article,
 aside {
-	background-color: #ffffff;  /* */
-	color: #2e3436;  /* */
-	display: block;
-	margin: 1.5em auto;
+    background-color: #ffffff;  /* */
+    color: #2e3436;  /* */
+    display: block;
+    margin: 1.5em auto;
 }
 
 nav,
 aside,
 article {
-	border: 1px solid #888a85;  /* */
-	-webkit-box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
-	-moz-box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
-	-o-box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
-	box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
-	padding: 1.5em;
+    border: 1px solid #888a85;  /* */
+    -webkit-box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
+    -moz-box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
+    -o-box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
+    box-shadow: 0 1px 4px #babdb6, 0 0 4em #eeeeec inset;
+    padding: 1.5em;
 }
 
 section {}
 nav {}
 
 article {
-	position: relative;
+    position: relative;
 }
 
 article > *,
 article > section > * {
-	display: block;
-	margin: 1.5em auto;  /* <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/> */
+    display: block;
+    margin: 1.5em auto;  /* <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/> */
 }
 
 article > :first-child,
 article > section > :first-child,
 article > section + h3 {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 article > :last-child,
 article > section > :last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 aside {
-	position: absolute;
+    position: absolute;
 }
 
 aside::before {
-	background-color: #d3d7cf;
-	border-color: #888a85;
-	border-style: solid dotted;
-	border-width: 1px 2px;
-	content: "";
-	display: block;
-	height: 3em;
-	left: 4em;
-	opacity: 0.5;
-	top: -1.5em;
-	position: absolute;
-	width: 5em;
+    background-color: #d3d7cf;
+    border-color: #888a85;
+    border-style: solid dotted;
+    border-width: 1px 2px;
+    content: "";
+    display: block;
+    height: 3em;
+    left: 4em;
+    opacity: 0.5;
+    top: -1.5em;
+    position: absolute;
+    width: 5em;
 }
 
 body > aside {
-	margin-left: 41.5em;
-	width: 10em;
+    margin-left: 41.5em;
+    width: 10em;
 }
 
 article > aside {
-	position: absolute;
-	left: -15em;
-	-webkit-transform: translateY(-3em);
-	-moz-transform: translateY(-3em);
-	-o-transform: translateY(-3em);
-	transform: translateY(-3em);
-	width: 10em;
-	z-index: -1;
+    position: absolute;
+    left: -15em;
+    -webkit-transform: translateY(-3em);
+    -moz-transform: translateY(-3em);
+    -o-transform: translateY(-3em);
+    transform: translateY(-3em);
+    width: 10em;
+    z-index: -1;
 }
 
 article > aside:nth-of-type(odd) {
-	left: -15em;
+    left: -15em;
 }
 
 article > aside:nth-of-type(even) {
-	left: 41.5em;
+    left: 41.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	text-align: center;
+    text-align: center;
 }
 
 h1 {
-	font-size: 4em;
+    font-size: 4em;
 }
 
 nav h1 {
-	display: none;
+    display: none;
 }
 
 section h1, nav h1, article h1, aside h1,
 h2 {
-	font-size: 2em;
-	line-height: 1.5;  /* <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/> */
+    font-size: 2em;
+    line-height: 1.5;  /* <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/> */
 }
 
 section section h1, section nav h1, section article h1, section aside h1,
 article section h1, article nav h1, article article h1, article aside h1,
 section hgroup > h2, nav hgroup > h2, article hgroup > h2, aside hgroup > h2,
 h3 {
-	font-size: 1.5em;
-	line-height: 1.33;  /* <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/> */
+    font-size: 1.5em;
+    line-height: 1.33;  /* <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/> */
 }
 
 hgroup {}
@@ -182,46 +182,46 @@ address {}
 p {}
 
 p + p {
-	text-indent: 1.5em;  /* <http://webtypography.net/Rhythm_and_Proportion/Blocks_and_Paragraphs/2.3.2/> */
-	margin-top: 0;
+    text-indent: 1.5em;  /* <http://webtypography.net/Rhythm_and_Proportion/Blocks_and_Paragraphs/2.3.2/> */
+    margin-top: 0;
 }
 
 hr {}
 pre {}
 
 blockquote {
-	margin: 1.5em;  /* <http://webtypography.net/Rhythm_and_Proportion/Blocks_and_Paragraphs/2.3.3/> */
+    margin: 1.5em;  /* <http://webtypography.net/Rhythm_and_Proportion/Blocks_and_Paragraphs/2.3.3/> */
 }
 
 blockquote[cite]::after {
-	content: "— <" attr(cite) ">";
-	display: block;
-	font-style: italic;
-	text-align: right;
+    content: "— <" attr(cite) ">";
+    display: block;
+    font-style: italic;
+    text-align: right;
 }
 
 article > ol, article > ul {
-	margin: 1.5em;
+    margin: 1.5em;
 }
 
 ol {}
 ul {}
 
 article > * > li {
-	margin: 0.75em auto;
+    margin: 0.75em auto;
 }
 
 nav > * > li {
-	display: inline-block;
-	margin: auto 0.75em;
+    display: inline-block;
+    margin: auto 0.75em;
 }
 
 nav > * > li:first-child {
-	margin-left: 0;
+    margin-left: 0;
 }
 
 nav > * > li:last-child {
-	margin-right: 0;
+    margin-right: 0;
 }
 
 li {}
@@ -238,63 +238,63 @@ div {}
 /* Text-level semantics */
 
 a {
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	cursor: cursor: pointer;
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    cursor: cursor: pointer;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 nav a,
 h1 > a {
-	border-bottom-width: 2px;
+    border-bottom-width: 2px;
 }
 
 a:link {
-	background-color: #ffffff;
-	border-color: #204a87;  /* */
-	color: #204a87;  /* */
+    background-color: #ffffff;
+    border-color: #204a87;  /* */
+    color: #204a87;  /* */
 }
 
 a:visited {
-	background-color: #ffffff;
-	border-color: #5c3566;  /* */
-	color: #5c3566;  /* */
+    background-color: #ffffff;
+    border-color: #5c3566;  /* */
+    color: #5c3566;  /* */
 }
 
 a:hover {
-	background-color: #ffffff;
-	/*border-color: #ce5c00;*/
-	color: #2e3436;
+    background-color: #ffffff;
+    /*border-color: #ce5c00;*/
+    color: #2e3436;
 }
 
 h1 > a:hover {
-	background-color: #ffffff;
-	color: #2e3436;  /* */
+    background-color: #ffffff;
+    color: #2e3436;  /* */
 }
 
 a:focus {
-	outline: 1px solid #f57900;  /* */
+    outline: 1px solid #f57900;  /* */
 }
 
 nav a,
 h1 > a:focus {
-	outline-width: 2px;
+    outline-width: 2px;
 }
 
 nav a {
-	display: block;
-	font-size: 2em;
+    display: block;
+    font-size: 2em;
 }
 
 em {}
 strong {}
 
 small {
-	font-size: 0.75em;
-	line-height: 2;  /* <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/> */
+    font-size: 0.75em;
+    line-height: 2;  /* <http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/> */
 }
 
 s {}
@@ -304,7 +304,7 @@ q {}
 
 dfn {}
 abbr {
-	letter-spacing: 0.1em;  /* <http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.6/> */
+    letter-spacing: 0.1em;  /* <http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.6/> */
 }
 time {}
 
@@ -312,69 +312,69 @@ code,
 var,
 samp,
 kbd {
-	font-family: monospace;
-	overflow-x: auto;
-	padding: 0.1em;
-	white-space: pre;
+    font-family: monospace;
+    overflow-x: auto;
+    padding: 0.1em;
+    white-space: pre;
 }
 
 code {
-	background-color: #eeeeec;  /* */
-	border: 1px solid #888a85;  /* */
-	color: #000000;  /* */
+    background-color: #eeeeec;  /* */
+    border: 1px solid #888a85;  /* */
+    color: #000000;  /* */
 }
 
 var {
-	font-style: italic;
+    font-style: italic;
 }
 
 samp {
-	background-color: #2e3436;  /* */
-	border: 1px solid #000000;
-	color: #eeeeec;  /* */
+    background-color: #2e3436;  /* */
+    border: 1px solid #000000;
+    color: #eeeeec;  /* */
 }
 
 kbd {
-	background-color: #2e3436;  /* */
-	border: 1px solid #000000;
-	color: #8ae234;  /* */
+    background-color: #2e3436;  /* */
+    border: 1px solid #000000;
+    color: #8ae234;  /* */
 }
 
 article > code,
 article > kbd,
 article > samp {
-	padding: 0.75em;
+    padding: 0.75em;
 }
 
 article > p + code,
 article > p + kbd,
 article > p + samp {
-	margin-top: -0.75em;
+    margin-top: -0.75em;
 }
 
 article > code + p,
 article > kbd + p,
 article > samp + p {
-	margin-top: -0.75em;
+    margin-top: -0.75em;
 }
 
 sub, sup {
-	font-size: 0.75em;
+    font-size: 0.75em;
 }
 
 sub {
-	vertical-align: sub;
+    vertical-align: sub;
 }
 
 sup {
-	vertical-align: super;
+    vertical-align: super;
 }
 
 i {
-	font-style: italic;
+    font-style: italic;
 }
 b {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 mark {}
@@ -397,19 +397,19 @@ ins {}
 article { counter-reset:edit; }
 
 article > ins {
-	display: block;
-	margin: 1.5em auto;
+    display: block;
+    margin: 1.5em auto;
 }
 
 article > ins > p:first-child:before {
-	content: "Nachtrag (" counter(edit, decimal) "): ";
-	counter-increment: edit;
-	font-weight: bold;
+    content: "Nachtrag (" counter(edit, decimal) "): ";
+    counter-increment: edit;
+    font-weight: bold;
 }
 
 article > ins:first-of-type > p:first-child:before {
-	content: "Nachtrag: ";
-	counter-increment: edit;
+    content: "Nachtrag: ";
+    counter-increment: edit;
 }
 
 del {}
@@ -419,26 +419,26 @@ del {}
 img,
 video,
 audio {
-	border: 1em solid #ffffff;  /* */
-	-webkit-box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
-	-moz-box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
-	-o-box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
-	box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
-	position: relative;
-	left: -1em;
+    border: 1em solid #ffffff;  /* */
+    -webkit-box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
+    -moz-box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
+    -o-box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
+    box-shadow: 0 0.25em 0.25em #d3d7cf;  /* */
+    position: relative;
+    left: -1em;
     max-width: 37em;  /* 40em - 2 * 1.5em padding of the article */
 }
 
 article > p + img,
 article > p + video,
 article > p + audio {
-	margin-top: -0.75em;
+    margin-top: -0.75em;
 }
 
 article > img + p,
 article > video + p,
 article > audio + p {
-	margin-top: -0.75em;
+    margin-top: -0.75em;
 }
 
 img {}
@@ -461,11 +461,11 @@ area {}
 /* Tabular data */
 
 table {
-	background-color: #eeeeec;  /* */
-	border: 1px solid #888a85;  /* */
-	border-collapse: collapse;
-	color: #000000;  /* */
-	display: table !important;
+    background-color: #eeeeec;  /* */
+    border: 1px solid #888a85;  /* */
+    border-collapse: collapse;
+    color: #000000;  /* */
+    display: table !important;
 }
 
 caption {}
@@ -481,23 +481,23 @@ tr {}
 
 thead > tr:nth-of-type(odd),
 tr:nth-of-type(even) {
-	background-color: #eeeeec;
-	color: #2e3436;
+    background-color: #eeeeec;
+    color: #2e3436;
 }
 
 tr:nth-of-type(odd) {
-	background-color: #ffffff;
-	color: #2e3436;
+    background-color: #ffffff;
+    color: #2e3436;
 }
 
 td,
 th {
-	padding: 0.75em;
+    padding: 0.75em;
 }
 
 td {}
 th {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 /* Forms */
