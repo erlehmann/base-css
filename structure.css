@@ -133,8 +133,12 @@ h1 {
     font-size: 4em;
 }
 
-nav h1 {
+nav > h1 {
     display: none;
+}
+
+article > header > h1:not(:first-child) {
+    margin-top: 0.5em;
 }
 
 section h1, nav h1, article h1, aside h1,
@@ -153,7 +157,27 @@ h3 {
 
 hgroup {}
 
-header {}
+header {
+    position: relative;
+}
+
+header > :not(h1):not(hgroup),
+footer > * {
+    display: inline-block;
+    width: 49%
+}
+
+header > :not(h1):not(hgroup):nth-child(1),
+footer > :nth-child(1) {
+    text-align: left;
+
+}
+
+header > :not(h1):not(hgroup):nth-child(2),
+footer > :nth-child(2) {
+    text-align: right;
+}
+
 footer {}
 
 address {}
