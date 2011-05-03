@@ -205,7 +205,7 @@ blockquote[cite]::after {
     text-align: right;
 }
 
-article > ol, article > ul {
+article ol, article ul {
     margin: 1.5em;
 }
 
