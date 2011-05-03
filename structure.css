@@ -161,20 +161,20 @@ header {
     position: relative;
 }
 
-header > :not(h1):not(hgroup),
-footer > * {
+article > header > :not(h1):not(hgroup),
+article > footer > * {
     display: inline-block;
     width: 49%
 }
 
-header > :not(h1):not(hgroup):nth-child(1),
-footer > :nth-child(1) {
+article > header > :not(h1):not(hgroup):nth-child(1),
+article > footer > :nth-child(1) {
     text-align: left;
 
 }
 
-header > :not(h1):not(hgroup):nth-child(2),
-footer > :nth-child(2) {
+article > header > :not(h1):not(hgroup):nth-child(2),
+article > footer > :nth-child(2) {
     text-align: right;
 }
 
