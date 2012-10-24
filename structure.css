@@ -30,6 +30,10 @@ h1 [title] {
 [class] {}
 [style] {}
 
+[hidden] {
+    display: none;
+}
+
 /* root element */
 
 html {
@@ -41,7 +45,7 @@ html {
 
 body {
     margin: auto;
-    max-width: 960px;
+    width: 60em;
 }
 
 section,
@@ -65,6 +69,27 @@ nav {}
 article {
     position: relative;
     width: 37em;  /* <http://webtypography.net/Rhythm_and_Proportion/Horizontal_Motion/2.1.2/> */
+}
+
+article::before,
+article::after {
+    border-left-width: 0.75em;
+    border-right-width: 0;
+    border-style: none dotted;
+    bottom: 0.75em;
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    top: 0.75em;
+}
+
+article::before {
+    left: 0.375em;
+}
+
+article::after {
+    right: 0.375em;
 }
 
 article > *,
@@ -102,8 +127,8 @@ aside::before {
 }
 
 body > aside {
-    margin-left: 41.5em;
-    width: 10em;
+    width: 15em;
+    margin-left: -5em;
 }
 
 article > aside {
@@ -411,22 +436,26 @@ del {}
 img,
 video,
 audio {
-    border: 1em solid;
-    position: relative;
-    left: -1em;
-    max-width: 37em;  /* 40em - 2 * 1.5em padding of the article */
+    border: 1px solid;
+    width: 100%;  /* width of parent element */
+}
+
+article > img,
+article > video,
+article > audio {
+    display: block;
 }
 
 article > p + img,
 article > p + video,
 article > p + audio {
-    margin-top: -0.75em;
+    /*margin-top: -0.75em;*/
 }
 
 article > img + p,
 article > video + p,
 article > audio + p {
-    margin-top: -0.75em;
+    /*margin-top: -0.75em;*/
 }
 
 img {}

@@ -1,8 +1,7 @@
 /* This stylesheet uses the solarized color palette. It does, however,
  * not adhere to foreground and background recommendations. Also, accent
- * colors were darkened by 6 steps using Agave (hover colors were
- * darkened by 4 steps). This was done to enhance contrast to satisfy
- * WCAG 2 Level AAA.
+ * colors were darkened by 6 steps using Agave. This was done to enhance
+ * contrast to satisfy WCAG 2 Level AAA.
  *
  * Summary:
  *  base 03 — optional emphatized content
@@ -37,6 +36,11 @@ article {
     box-shadow: 0 1px 4px #93a1a1, 0 0 4em #eee8d5 inset;  /* base 1, base 2 */
 }
 
+article::before,
+article::after {
+    border-color: #eee8d5;  /* base 2 */
+}
+
 h1, h2, h3, h4, h5, h6 {
     background-color: #fdf6e3;  /* base 3 */
     color: #002b36;  /* base 03 */
@@ -58,14 +62,18 @@ a:visited {
 
 a:hover {
     background-color: #eee8d5;  /* base 2 */
-    border-color: #1c689e;  /* blue */
-    color: #1c689e;  /* blue */
+    border-color: #185785;  /* blue */
+    color: #185785;  /* blue */
 }
 
 a:visited:hover {
     background-color: #eee8d5;  /* base 2 */
-    border-color: #a12a63;  /* magenta */
-    color: #a12a63;  /* magenta */
+    border-color: #872353;  /* magenta */
+    color: #872353;  /* magenta */
+}
+
+a:focus {
+    outline-color: #cb4b16;  /* orange */
 }
 
 code,
